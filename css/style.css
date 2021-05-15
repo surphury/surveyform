@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: Poppins, sans-serif;
+    color:#eee;
+    background-image:url('https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg');
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color:#557;
+    background-blend-mode: soft-light;
+}
+h1,p,legend{
+    text-align: center;
+}
+.comments {
+    width: 100%;
+    height: 80px;
+}
+input{
+    padding: 2px;
+    font-family: inherit;
+    font-size: inherit;
+    box-sizing: border-box;
+}
+input:not([type="text"],[type="number"]){
+    margin-right: 8px;
+}
+input,select,.comments{
+    padding: 2px;
+    font-family: inherit;
+    font-size: inherit;
+    box-sizing: border-box;
+}
+main{
+    margin: auto;
+    width: 55%;
+}
+fieldset > label {
+    display: block;
+}
+.form{
+    background-color: #114d;
+    padding:3vw;
+    display: flex;
+    flex-direction: column;
+}
+.submit{
+    background-color: #393;
+    color: #eee;
+}
+@media only screen and (max-width:500px){
+    main{
+        width: 80%;
+    }
+    body{
+        font-size: 13px;
+    }
+}
+@media only screen and (min-width:900px){
+    body{
+        font-size: 16px;
+    }
+}
